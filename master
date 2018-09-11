@@ -1,0 +1,35 @@
+# sum-of-arrays
+//22nd program on c
+#include<stdio.h>
+int main()
+{
+int a[3][3],b[3][3],sum[3][3],i,j;
+for(i=0;i<3;i++)
+{
+  for(j=0;j<3;j++)
+   {
+     printf("Enter the elements  \n");
+     scanf("%d",&a[i][j]);
+    }
+}
+for(i=0;i<3;i++)
+{
+  for(j=0;j<3;j++)
+   {
+     printf("Enter the elements of the second matrix \n");
+     scanf("%d",&b[i][j]);
+    }
+}
+printf("The sum of the matrices is \n");
+for(i=0;i<3;i++)
+    {
+      for(j=0;j<3;j++)
+        {
+           sum[i][j]=a[i][j]+b[i][j];
+           printf("%d \t",sum[i][j]);
+          }
+     printf("\n");
+    }
+return(0);
+} 
+
